@@ -14,11 +14,8 @@ it('GET should return a status of 200 and check headers title and url', function
 		.expect('jsonTypes', '*', {
 	        title: Joi.string(),
 	        url: Joi.string(),})
-		.then((responce) => {
-			const filteredResponce = responce.json.map((item) =>({
-				title: item.title,
-				url: item.url,
-			}));
-			console.log(filteredResponce);
-		})
-    });
+		.then((result) => {
+			let pics = result.json
+				pics.forEach((pic) => {console.log(pic.title, pic.url)})
+			});
+		});
