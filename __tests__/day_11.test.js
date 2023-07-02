@@ -2,14 +2,6 @@ const frisby = require("frisby");
 const Joi = frisby.Joi;
 const BASE_URL = "https://water-ttl.herokuapp.com/hygrometer"
 
-
-frisby.globalSetup({
-	request: {
-		timeout: 10000,
-	},
-});
-
-
 describe("Day_11: Monitoring", () => {
 	it("GET water level", async function (){
 	const userResult = await frisby

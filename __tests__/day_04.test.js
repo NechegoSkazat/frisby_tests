@@ -1,7 +1,8 @@
 const frisby = require("frisby");
 const Joi = frisby.Joi;
 
-it('GET should return a status of 200', function (){
+describe("Day_04: Authorization", () => {
+	it('GET should return a status of 200', function (){
 	return frisby.get('https://api.getpostman.com/collections', {headers:  {           
     "x-api-key": "PMAK-649827cf0c4589002a462f93-668e88df3613ed64cab0316bc502278b4c"
 }})
@@ -30,3 +31,4 @@ it('GET should return a status of 200', function (){
     	fork: Joi.object(),
     	isPublic: Joi.boolean(),})
 	});
+});

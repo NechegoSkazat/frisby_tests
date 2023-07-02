@@ -1,13 +1,8 @@
 const frisby = require("frisby");
 const Joi = frisby.Joi;
 
-frisby.globalSetup({
-	request: {
-		timeout: 10000,
-	},
-});
-
-it('GET should return a status of 200 and check headers title and url', function (){
+describe("Day_07: Debugging", () => {
+	it('GET should return a status of 200 and check headers title and url', function (){
 	return frisby
 		.get("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&count=10")
 		.expect("status", 200)
@@ -19,3 +14,4 @@ it('GET should return a status of 200 and check headers title and url', function
 				pics.forEach((pic) => {console.log(pic.title, pic.url)})
 			});
 		});
+});	

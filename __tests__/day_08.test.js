@@ -4,13 +4,9 @@ const BASE_URL = "https://randomuser.me/api"
 const gender = 'female'
 const nation = 'FR'
 
-frisby.globalSetup({
-	request: {
-		timeout: 10000,
-	},
-});
 
-it("GET should return random user", function (){
+describe("Day_08: Run a collection", () => {
+	it("GET should return random user", function (){
 	return frisby
 		.get(`${BASE_URL}`)
 		.expect("status", 200)
@@ -38,3 +34,4 @@ it("GET should return random french female user", function (){
 			gender: gender,
 			nat: nation,});
 		});
+});

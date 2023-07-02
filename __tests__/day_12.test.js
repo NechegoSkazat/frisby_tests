@@ -6,13 +6,6 @@ const collectionID = '20832208-17879ab3-0e4e-4461-91b1-24092904ef10'
 const workspaceID = '1483065f-16f0-4fe3-8cbd-5f6358a55f98'
 const API_KEY = "PMAK-649827cf0c4589002a462f93-668e88df3613ed64cab0316bc502278b4c"
 
-frisby.globalSetup({
-	request: {
-		timeout: 10000,
-	},
-});
-
-
 describe("Day_12: Postman API", () => {
 	it("GET a collection", function (){
 	return frisby

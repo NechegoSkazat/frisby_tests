@@ -3,13 +3,8 @@ const Joi = frisby.Joi;
 const BASE_URL = "https://randomuser.me/api"
 const POST_URL = "https://postman-echo.com/post"
 
-frisby.globalSetup({
-	request: {
-		timeout: 10000,
-	},
-});
-
-it("POST should return data taken from GET", async function (){
+describe("Day_09: Scripting", () => {
+	it("POST should return data taken from GET", async function (){
 	const userResult = await frisby
 	.get(BASE_URL)
 	.expect("status", 200)
@@ -30,5 +25,4 @@ it("POST should return data taken from GET", async function (){
 			email: user.email,
 			id: user.id});
 	});
-
-	
+});	
