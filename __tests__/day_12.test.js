@@ -31,7 +31,7 @@ describe("Day_12: Postman API", () => {
 		"x-api-key": API_KEY,
 	}})
 	.expect("status", 200)
-	.expect("jsonTypes", "workspace", {"name": "ANKO Internship"})
+	.expect("jsonTypes", "workspace", {"name": "ANKO QA Internship"})
 	});
 });
 
