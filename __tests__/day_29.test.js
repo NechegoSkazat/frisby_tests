@@ -9,14 +9,6 @@ const x_api_key = "PMAK-649827cf0c4589002a462f93-668e88df3613ed64cab0316bc502278
 jest.setTimeout(15000);
 
 describe("Day_29: Webhooks", () => {  
-  // it("POST response time < 1000", async () => {
-  //   let newPayload = JSON.parse(globals.previousRequest).data;    
-  //   const response = await frisby
-  //     .post(`${BASE_URL}`, {body: JSONstringify.newPayload})
-  //     .expect('status', 200);
-  //     console.log('Echoing my payload: ', pm.response.json().data) 
-  //   });    
-
   it("Create webhook", async () => {
       const response = await frisby
         .post(`https://api.getpostman.com/webhooks?workspace=${workspaceId}`, 
