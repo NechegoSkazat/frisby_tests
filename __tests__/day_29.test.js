@@ -4,7 +4,7 @@ let newPayload = {};
 const workspaceId = "1483065f-16f0-4fe3-8cbd-5f6358a55f98";
 const webhookName = "echo webhook";
 const collectionUid = "20832208-bbdf7137-237a-44e3-b491-5a70c09bbf25";
-const x_api_key = "PMAK-649827cf0c4589002a462f93-668e88df3613ed64cab0316bc502278b4c"
+const x_api_key = process.env.API_KEY
 
 jest.setTimeout(15000);
 
