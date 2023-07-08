@@ -1,5 +1,5 @@
 const frisby = require("frisby");
-const Joi = require("Joi");
+const Joi = frisby.Joi;
 const BASE_URL = "https://postman-echo.com/post";
 const { faker } = require('@faker-js/faker');
 let payload = {};
