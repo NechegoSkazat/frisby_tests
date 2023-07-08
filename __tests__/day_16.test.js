@@ -1,7 +1,7 @@
 const frisby = require("frisby");
 const Joi = frisby.Joi;
 const BASE_URL = 'http://xkcd.com/';
-let page = 0;
+let page = 400;
 let status = 200;
 
 frisby.globalSetup({
