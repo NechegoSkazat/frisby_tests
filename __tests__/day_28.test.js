@@ -1,5 +1,5 @@
 const frisby = require("frisby");
-const TEST_URL = "https://docs.frisbyjs.com/";
+const TEST_URL = "https://google.com/";
 
 jest.setTimeout(15000);
 
